@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="images/landing/Full-Logo.png" alt="" />
+          </div>
+          <div class="navbar">
+            <a href="#" class="nav nav_down">Download</a>
+            <a href="#" class="nav nav_help">Help</a>
+            <a href="#" class="nav nav_login">Log in</a>
+            <a href="home.html" class="nav nav_signup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="sign_up" id="sign_up">
+        <a class="close--icon" href="#"> &#10006; </a>
+        <h3 class="sign_up--title">Ready to sign up ?</h3>
+        <div class="sign_up__social">
+          <div class="sign_up__social--box facebook--box">
+            <i class="fa-brands fa-facebook-f"></i>
+            <p>Facebook</p>
+          </div>
+          <div class="sign_up__social--box google--box">
+            <i class="fa-brands fa-google"></i>
+            <p>Google</p>
+          </div>
+        </div>
+        <div class="sign_up__input">
+          <label for="email">Email address</label>
+          <input type="email" placeholder="RandomExample@gmail.com" />
+        </div>
+        <div class="sign_up__input">
+          <label for="password">Password</label>
+          <input type="password" placeholder="*********" />
+        </div>
+        <div class="sign_up__input">
+          <label for="username"></label>
+          <input
+            type="text"
+            autocomplete="off"
+            id="username"
+            placeholder="Username"
+          />
+        </div>
+        <div class="sign_up__select">
+          <select class="sign_up--selection" name="#" id="#">
+            <option value="#">Date Of Bith</option>
+            <option value="#">10</option>
+          </select>
+          <select class="sign_up--selection" name="#" id="#">
+            <option value="#">Gender</option>
+            <option value="#">Male</option>
+            <option value="#">Female</option>
+          </select>
+        </div>
+        <div class="recaptcha__box">
+          <div class="recaptcha__box--info">
+            <input type="checkbox" name="#" id="#" />
+            <p class="not__robot">I'm not robot</p>
+          </div>
+          <!-- <div class="recaptcha__box--img">
+            <img src="img/sign-up/RecaptchaLogo.png" alt="#" />
+          </div> -->
+        </div>
+        <p class="sign_up--text">
+          By clicking on "Sign up", you accept the
+          <span class="blue_text"> Terms and Conditions of Use.</span>
+        </p>
+        <a href="#" class="sign_up--btn">Sign Up</a>
+        <p class="sign_up--text">
+          Already have an account? <span class="blue_text"> Log in</span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
