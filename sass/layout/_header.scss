@@ -1,0 +1,298 @@
+.header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+
+  animation-name: header-ani;
+  animation-duration: 1s;
+  // animation-timing-function: linear;
+  visibility: visible;
+  animation-delay: 0;
+  display: flex;
+  align-items: center;
+  z-index: 11111111;
+  // animation-fill-mode: forwards;
+  &::after {
+    content: " ";
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10vh;
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   $color-tertiary,
+    //   $color-primary
+    // );
+    // filter: blur(8px);
+    z-index: 0;
+    opacity: 1;
+    // backdrop-filter: blur(5px);
+    // background-color: rgba(51, 51, 51, 0.651);
+  }
+  &-content {
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    .navbar {
+      @include phone {
+        display: none;
+      }
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 2rem;
+      .nav {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        border-radius: 3rem;
+        &_login {
+          margin-left: 1rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid $color-white;
+        }
+        &_signup {
+          margin-left: -1rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid $color-white;
+          color: $color-black-1;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+}
+.header2 {
+  padding: 1rem 3rem;
+  .logo2 {
+    display: flex;
+    align-items: center;
+    &__img {
+      margin-right: 2rem;
+      width: 100px;
+      display: inline-block;
+    }
+    &_link {
+      font-size: 1.6rem;
+      color: $color-grey-2;
+      margin: 0 1rem;
+      text-decoration: none;
+
+      border-radius: 30px;
+      font-weight: 500;
+      padding: 0.5rem 0;
+    }
+    .current {
+      padding: 0.5rem 2rem;
+      color: $color-secondary;
+      position: relative;
+
+      background-color: $color-black-1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        height: calc(100% + 2px);
+        background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        );
+
+        width: calc(100% + 2px);
+        z-index: -1;
+        border-radius: 30px;
+      }
+    }
+    &__library {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        bottom: -0.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__search {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      .nav__search {
+        padding: 0.8rem 3rem;
+        width: 170px;
+        border: none;
+        border-radius: 3rem;
+        background-color: $color-grey-1;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        &::placeholder {
+          color: $color-grey-3;
+        }
+        &:focus {
+          outline: 2px solid $color-secondary;
+        }
+      }
+      .nav_icon {
+        i {
+          font-size: 1.5rem;
+          color: white;
+          border: 1px solid white;
+          border-radius: 2rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.header-center {
+  margin-left: -10rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  &-link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: $color-grey-2;
+  }
+  .active-page {
+    position: relative;
+    color: $color-grey-3;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      left: 10%;
+      bottom: -1rem;
+      height: 0.3rem;
+      background-image: linear-gradient(
+        to right,
+        $color-secondary,
+        $color-primary
+      );
+    }
+  }
+}
+.maping {
+  font-size: 1.6rem;
+  color: $color-grey-2;
+  font-weight: 400;
+  margin-left: 2rem;
+  .here {
+    color: $color-grey-3;
+  }
+}
+.page_heading {
+  display: flex;
+  align-items: flex-end;
+  .header-page {
+    color: $color-grey-3;
+    font-size: 6.4rem;
+    margin: 0;
+    margin-right: 2rem;
+    text-shadow: 0 0 1rem $color-secondary;
+  }
+  .header-center {
+    margin-left: 2rem;
+    transform: translateY(-1rem);
+    font-size: 1.6rem;
+  }
+}
+.main-music {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-name {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+    .music-heading {
+      .type-section {
+        color: $color-grey-3;
+        font-size: 1.8rem;
+      }
+      .music-aftor {
+        font-size: 5rem;
+        color: white;
+        margin: 1rem 0;
+      }
+      .music-autor {
+        color: $color-grey-2;
+        margin-bottom: 3rem;
+        font-weight: 400;
+      }
+    }
+    .header-center {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .favourite-input {
+    display: none;
+  }
+  .music-remote {
+    text-align: right;
+    .comments {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      height: 100%;
+      .btn {
+        padding: 0.5rem 4rem;
+      }
+      .music-more,
+      .favourites {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $color-grey-3;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 2rem;
+        border-radius: 50%;
+      }
+      .music-more {
+        color: $color-grey-3;
+      }
+    }
+  }
+  .favourites {
+    color: $color-secondary;
+  }
+  .favourite-input:checked ~ .favourites {
+    color: red;
+  }
+}
+.followers {
+  font-size: 1.6rem;
+  color: $color-grey-2;
+  transform: translateY(6rem);
+}
+.podcast--title {
+  position: relative;
+  &::before {
+    content: "+1";
+    color: $color-secondary;
+    position: absolute;
+    top: -1rem;
+    font-size: 1.4rem;
+    right: -1.5rem;
+  }
+}

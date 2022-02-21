@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="podcast_page">
+    <div class="header header2">
+      <div class="header-content">
+        <div class="logo2">
+          <img class="logo2__img" src="images/landing/Full-Logo.png" alt="" />
+          <a class="logo2_link logo2__browse" href="home.html">Home</a>
+          <a class="logo2_link logo2__library" href="my-playlist.html"
+            >Library</a
+          >
+          <a href="genre.html" class="logo2_link logo2__home current">Browse</a>
+        </div>
+        <div class="header-center">
+          <a href="genre.html" class="header-center-link">Genres & Moods</a>
+          <a href="new-releases.html" class="header-center-link"
+            >New Releases</a
+          >
+          <a href="#" class="header-center-link active-page">Podcasts</a>
+        </div>
+        <div class="logo2__search">
+          <input type="search" placeholder="Search" class="nav__search" />
+          <div class="nav_icon"><i class="fa-solid fa-user"></i></div>
+          <select name="language" id="" class="language">
+            <option value="english">JohnDoe</option>
+            <option value="english">Jonibek</option>
+            <option value="english">Munirov</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section class="podcast__recently">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-header-txt">Popular in these week</h3>
+          <div class="section-header-right">
+            <a href="#" class="setting-button"
+              ><span class="view-all">VIEW ALL</span></a
+            >
+          </div>
+        </div>
+        <div class="grid6 recently_content">
+          <div class="card-recent">
+            <img src="images/simple.png" alt="" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">Simple Pleasures</h3>
+              <h3 class="card-recent-text-likes">Yotam Ottolenghi</h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/david.png" alt="" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">
+                David Tennant Does a Podc...
+              </h3>
+              <h3 class="card-recent-text-likes">David Tennant</h3>
+            </div>
+          </div>
+
+          <div class="card-recent">
+            <img src="images/stuff.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">Stuff you Should Know</h3>
+              <h3 class="card-recent-text-likes">
+                Iheartradio & Howstuffworks
+              </h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/tony.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">The Tony Kornheiser Show</h3>
+              <h3 class="card-recent-text-likes">Tony Kornheiser</h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img
+              src="images/lore.png"
+              alt="dont eat monster"
+              class="card-recent-img"
+            />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">Lore</h3>
+              <h3 class="card-recent-text-likes">Aaron Mahnke</h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/creativelife.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">That Creative Life</h3>
+              <h3 class="card-recent-text-likes">Sara Dietschy</h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/invisible.png" alt="" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">99% Invisible</h3>
+              <h3 class="card-recent-text-likes">Roman Mars</h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/conan.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">
+                Conan O'Brien Needs a Friend
+              </h3>
+              <h3 class="card-recent-text-likes">Team Coco & Earwolf</h3>
+            </div>
+          </div>
+
+          <div class="card-recent">
+            <img src="images/adventure.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">The Adventure Zone</h3>
+              <h3 class="card-recent-text-likes">
+                Justin, Travis, Clint & Griffin McElroy
+              </h3>
+            </div>
+          </div>
+          <div class="card-recent">
+            <img src="images/ted.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">TED Talks Daily</h3>
+              <h3 class="card-recent-text-likes">TED</h3>
+            </div>
+          </div>
+          <a href="podcast-page.html">
+            <div class="card-recent">
+              <img
+                src="images/startalk.png"
+                alt="dont eat monster"
+                class="card-recent-img"
+              />
+              <div class="card-recent-text">
+                <h3 class="card-recent-text-heading">StarTalk Radio Show</h3>
+                <h3 class="card-recent-text-likes">Neil deGrasse Tyson</h3>
+              </div>
+            </div></a
+          >
+          <div class="card-recent">
+            <img src="images/startup.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">StartUp</h3>
+              <h3 class="card-recent-text-likes">Gimlet</h3>
+            </div>
+          </div>
+        </div>
+        <div class="btn-section">
+          <a href="#" class="btn">Show More</a>
+        </div>
+      </div>
+    </section>
+    <section class="podcast__recently">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-header-txt">Featured episodes</h3>
+          <div class="section-header-right">
+            <a href="#" class="setting-button"
+              ><span class="view-all">VIEW ALL</span></a
+            >
+          </div>
+        </div>
+        <div class="grid3 episode_content">
+          <div class="card-episode">
+            <img src="images/dude.png" alt="" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">
+                We're Losing Our Jobs? - Dude Soup #212
+              </h3>
+              <h3 class="card-recent-text-likes">
+                I see the crotch of a polygon man
+              </h3>
+            </div>
+          </div>
+          <div class="card-episode">
+            <img src="images/conan.png" alt="" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">Krinten Bell</h3>
+              <h3 class="card-recent-text-likes">
+                Actress Kristen Bell feels supercharged about being Conan
+                O'Brien's frined! Kristen joins Conan to...
+              </h3>
+            </div>
+          </div>
+          <div class="card-episode">
+            <img src="images/stuff.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">
+                What`s the deal with ASMR?
+              </h3>
+              <h3 class="card-recent-text-likes">
+                ASMR is soothing to some, maddening to other. Learn all about
+                whisper tones in today's episode.
+              </h3>
+            </div>
+          </div>
+          <div class="card-episode">
+            <img src="images/maddie.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">1 - They've Taken Her</h3>
+              <h3 class="card-recent-text-likes">
+                Madeleine McCann and her family travel to Portugal with a group
+                of friends who will become knows as...
+              </h3>
+            </div>
+          </div>
+          <div class="card-episode">
+            <img
+              src="images/nbimg.png"
+              alt="dont eat monster"
+              class="card-recent-img"
+            />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">1 - REALISING</h3>
+              <h3 class="card-recent-text-likes">
+                What do you do when you realise you're non-binary? How do you
+                come out yourself? How...
+              </h3>
+            </div>
+          </div>
+          <div class="card-episode">
+            <img src="images/creativelife.png" class="card-recent-img" />
+            <div class="card-recent-text">
+              <h3 class="card-recent-text-heading">
+                How to teach kids to talk about taboo topics...
+              </h3>
+              <h3 class="card-recent-text-likes">
+                When one of Liz Kleinrock's fourth-grade students said the
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="genre">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-header-txt">
+            Moods
+            <p class="section-header-txt-info">Explore by genre and mood</p>
+          </h3>
+        </div>
+        <div class="grid6 genre_content">
+          <div class="card-recent">
+            <img src="images/STORIES.png" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/EDU.png" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/MUSIC.png" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/Lifestyle&.png" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/Business&.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/GAMES.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/Arts.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/SPORTS.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/COMEDY.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/News &.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/Kids & Family.png" alt="" class="card-flow-img" />
+          </div>
+          <div class="card-recent">
+            <img src="images/TOP 50.png" alt="" class="card-flow-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

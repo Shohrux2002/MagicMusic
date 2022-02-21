@@ -1,0 +1,110 @@
+.podcast-page {
+  background-color: $color-black-1;
+  background-image: url(../../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 14vh;
+}
+.musics-box {
+  margin-top: 3rem;
+}
+.search-music {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .search-music-input {
+    position: relative;
+    .fa-magnifying-glass {
+      position: absolute;
+      font-size: 1.6rem;
+      color: $color-grey-2;
+      top: 0.5rem;
+      right: 1rem;
+    }
+    input {
+      background-color: transparent;
+      padding: 0.5rem 0rem 0.5rem 0.5rem;
+      border: none;
+      border-bottom: 1px solid $color-grey-3;
+      font-size: 1.5rem;
+      width: 160px;
+      &::placeholder {
+        color: $color-grey-2;
+      }
+    }
+  }
+  .search-setting {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-grey-2;
+    padding: 0 1rem;
+  }
+}
+.music__list-content:hover {
+  background-color: rgba($color-grey-1, 0.5);
+}
+.currently-playing-music {
+  background-color: rgba($color-grey-1, 0.5);
+}
+.music__list-tip,
+.music__list-content {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.5fr 16fr 2fr 2fr 1fr;
+  gap: 2rem;
+  margin: 0.5rem 0;
+  align-items: center;
+  &-icon {
+    i {
+      color: $color-grey-2;
+      font-size: 2rem;
+    }
+  }
+  &-title {
+    &-1 {
+      font-size: 1.6rem;
+      color: white;
+      font-weight: 400;
+      margin: 0.3rem 0;
+    }
+    &-2 {
+      font-size: 1.3rem;
+      color: $color-grey-2;
+      line-height: 1.5;
+    }
+  }
+  .music__list-title-top {
+    font-size: 1.3rem;
+    color: $color-grey-2;
+  }
+  &-progress {
+    &-status {
+      display: block;
+      width: 90px;
+      height: 3px;
+      background-color: $color-grey-1;
+      position: relative;
+    }
+    .now-playing {
+      &::after {
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 70%;
+        background-color: $color-secondary;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &-upload-time,
+  &-time {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-grey-2;
+  }
+}

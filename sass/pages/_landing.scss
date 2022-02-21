@@ -1,0 +1,100 @@
+.main {
+  background-color: $color-black-1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/landing/bg-landing.png);
+  background-size: cover;
+  background-position: bottom;
+  flex-direction: column;
+  .heading-box {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../images/landing/MB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+  .main_btns {
+    @include phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 60%;
+      gap: 2rem;
+    }
+  }
+}
+.flow {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $color-black-1;
+  &__img {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+  &__text-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    &-img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  .text-box {
+    margin: 2rem 0;
+  }
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.521),
+      rgba(0, 0, 0, 0.233)
+    ),
+    url(../images/landing/Listen-landing.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .text-box {
+    margin: 2rem 0;
+  }
+}
+.find-music {
+  width: 100%;
+  background-color: $color-black-1;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  .text-box {
+    margin: 2rem 0;
+  }
+}
+.premium {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-black-1;
+  justify-content: center;
+  align-items: center;
+  .grid2 {
+    gap: 2rem;
+    margin-top: 2.5rem;
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  padding-bottom: 10rem;
+}

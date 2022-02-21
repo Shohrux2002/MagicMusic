@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header starts -->
+    <div class="header header2">
+      <div class="header-content">
+        <div class="logo2">
+          <img class="logo2__img" src="images/landing/Full-Logo.png" alt="" />
+          <a href="home.html" class="logo2_link logo2__home current">Home</a>
+
+          <a class="logo2_link logo2__library" href="my-playlist.html"
+            >Library</a
+          >
+          <a class="logo2_link logo2__browse" href="genre.html">Browse</a>
+        </div>
+        <div class="logo2__search">
+          <input type="search" placeholder="Search" class="nav__search" />
+          <div class="nav_icon"><i class="fa-solid fa-user"></i></div>
+          <select name="language" id="" class="language">
+            <option value="english">JohnDoe</option>
+            <option value="english">Jonibek</option>
+            <option value="english">Munirov</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Header finished -->
+    <main class="main__home">
+      <div class="container__small">
+        <div class="admin">
+          <div class="admin__info">
+            <div class="admin__img">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="admin__about">
+              <h4 class="admin__name">John Doe</h4>
+              <p class="admin__text">Free Account</p>
+            </div>
+          </div>
+          <div class="admin__premium">
+            <a class="blue__btn btn" href="#">Go To Premium</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="section_head">
+            <div class="section__title">
+              <h3 class="title_h3">Contact</h3>
+            </div>
+            <div class="section__setting"></div>
+          </div>
+          <div class="contact__form grid">
+            <div class="contact__box contact__box--1">
+              <label class="contact__box--label" for="name">First Name</label>
+              <input
+                autocomplete="off"
+                class="contact__box--input"
+                type="text"
+                id="name"
+                placeholder="John"
+              />
+            </div>
+            <div class="contact__box contact__box--2">
+              <label class="contact__box--label" for="last_name"
+                >Last Name</label
+              >
+              <input
+                autocomplete="off"
+                class="contact__box--input"
+                type="text"
+                id="last_name"
+                placeholder="Doe"
+              />
+            </div>
+            <div class="contact__box contact__box--3">
+              <label class="contact__box--label" for="email">Email</label>
+              <input
+                autocomplete="off"
+                class="contact__box--input"
+                type="email"
+                id="email"
+                placeholder="RandomExample@gmail.com"
+              />
+            </div>
+            <div class="contact__box contact__box--4">
+              <label class="contact__box--label" for="name">Gender</label>
+              <select class="contact__box--select" name="gender" id="gender">
+                <option value="#">Male</option>
+                <option value="#">Female</option>
+              </select>
+            </div>
+            <div class="contact__box contact__box--5">
+              <label class="contact__box--label" for="country">Country</label>
+              <select class="contact__box--select" name="country" id="country">
+                <option value="#">Ukraine</option>
+                <option value="#">Uzbekistan</option>
+              </select>
+            </div>
+            <div class="contact__box contact__box--6">
+              <label class="contact__box--label" for="birth_date"
+                >Date of Birth</label
+              >
+              <select
+                class="contact__box--select"
+                name="birth_date"
+                id="birth_date"
+              >
+                <option value="#">1</option>
+                <option value="#">2</option>
+              </select>
+            </div>
+            <div class="contact__box contact__box--7">
+              <label class="contact__box--label" for="month">Month</label>
+              <select class="contact__box--select" name="month" id="month">
+                <option value="#">January</option>
+                <option value="#">October</option>
+              </select>
+            </div>
+            <div class="contact__box contact__box--8">
+              <label class="contact__box--label" for="year">Year</label>
+              <select class="contact__box--select" name="year" id="year">
+                <option value="#">1990</option>
+                <option value="#">2000</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex__row">
+            <h4 class="flex__row--head">Facebook</h4>
+            <p class="flex__row--text">Not Connected</p>
+          </div>
+          <div class="flex__row">
+            <h4 class="flex__row--head">Google</h4>
+            <p class="flex__row--text">Not Connected</p>
+          </div>
+        </div>
+        <div class="section_head">
+          <div class="section__title">
+            <h3 class="title_h3">Streaming</h3>
+          </div>
+          <div class="section__setting"></div>
+        </div>
+        <div class="flex__row">
+          <h4 class="flex__row--head">Audio Quality (Premium feature)</h4>
+          <p class="flex__row--text"></p>
+        </div>
+        <div class="quality__box">
+          <p class="quality__box--text">Normal(128 kb/s)</p>
+          <p class="quality__box--text">High(192 kb/s)</p>
+          <p class="quality__box--text">Highest(320 kb/s)</p>
+        </div>
+        <div class="section_head">
+          <div class="section__title">
+            <h3 class="title_h3">Account</h3>
+          </div>
+          <div class="section__setting"></div>
+        </div>
+        <div class="account__list">
+          <div class="flex__row">
+            <h4 class="flex__row--head">Enable Browser Notifications</h4>
+            <p class="flex__row--text"></p>
+          </div>
+          <div class="flex__row">
+            <h4 class="flex__row--head">Language</h4>
+            <div class="flex__row--select">
+              <select name="#" id="#">
+                <option value="en">English</option>
+                <option value="uz">Uzbek</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex__row">
+            <h4 class="flex__row--head">Change password</h4>
+            <p class="flex__row--text"></p>
+          </div>
+          <div class="flex__row">
+            <h4 class="flex__row--head">Add new account</h4>
+            <p class="flex__row--text"></p>
+          </div>
+          <p class="account__list--text">Terms and Conditions</p>
+          <p class="account__list--text">Privacy Policy</p>
+          <p class="account__list--text">Support</p>
+        </div>
+        <div class="show__btn text-center">
+          <a class="show__more--btn btn" href="#">Show More</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

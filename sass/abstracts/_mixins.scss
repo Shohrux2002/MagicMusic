@@ -1,0 +1,27 @@
+// MEDIA QUERY
+/* 
+  Phone - 0 600px
+  tablet - 600px 900px
+  tablet landscape - 900 120px
+  desktop - 1200
+  */
+
+/*
+    ORDER: reset => Typography => general layout => grid/flex => Page Layout => components 
+  */
+@mixin landscape {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

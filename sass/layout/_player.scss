@@ -1,0 +1,159 @@
+.player {
+  z-index: 111111;
+  background-color: $color-black-2;
+  width: 95%;
+  margin: 0 auto;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  &__music {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+    &-img {
+      height: 100%;
+      img {
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+    &-name {
+      font-size: 1.5rem;
+      color: $color-grey-3;
+      margin-bottom: 0.5rem;
+    }
+    &-singer {
+      font-size: 1.3rem;
+      color: $color-grey-2;
+    }
+    &-like {
+      font-size: 1.5rem;
+      color: white;
+      display: flex;
+      gap: 1rem;
+    }
+    .likee {
+      display: none;
+      margin-right: 1rem;
+      &:checked ~ .player__music-like .fa-heart {
+        color: red;
+      }
+    }
+  }
+  &__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-top {
+      display: flex;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      gap: 4rem;
+      .fa-solid {
+        cursor: pointer;
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+      .fa-pause {
+        transform: scale(1.7);
+      }
+    }
+    &-minute {
+      display: flex;
+      color: $color-grey-2;
+      align-items: center;
+      margin-top: 1rem;
+      .status {
+        display: block;
+        width: 200px;
+        height: 3px;
+        background-color: $color-grey-1;
+        margin: 0 1rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70%;
+          background-image: linear-gradient(
+            to right,
+            $color-secondary,
+            $color-primary
+          );
+          height: 100%;
+        }
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    .player__volume {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .volumee {
+      display: none;
+    }
+    .mute {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -3px;
+      width: 3.3rem;
+      height: 3px;
+      transform: rotate(-50deg);
+      background-color: $color-grey-3;
+      opacity: 0;
+    }
+    .volumee:checked ~ .kalonka .mute {
+      opacity: 1;
+    }
+    .kalonka {
+      position: relative;
+    }
+    .fa-volume-high {
+      font-size: 2rem;
+      color: $color-grey-3;
+    }
+    .volume-degree {
+      width: 80px;
+      height: 3px;
+      background-color: $color-grey-1;
+      display: inline-block;
+      position: relative;
+      &::after {
+        content: "";
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $color-grey-3;
+      }
+    }
+  }
+  display: none;
+}
+.play-bar {
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 6rem;
+  z-index: 1111111;
+}

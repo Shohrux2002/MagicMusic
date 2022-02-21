@@ -1,0 +1,21 @@
+.album {
+  background-color: $color-black-1;
+  background-image: url(../../images/album-BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 14vh;
+}
+.side_album {
+  font-size: 1.4rem;
+  color: $color-grey-3;
+}
+.album__list-row {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 4fr 0.5fr 0.5fr 0.5fr;
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+  &:hover {
+    background-color: rgba(70, 67, 67, 0.24);
+  }
+}

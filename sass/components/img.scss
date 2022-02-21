@@ -1,0 +1,7 @@
+.skewing {
+  transition: all 1s;
+  &:hover {
+    transform: skewX(-5deg) scale(1.2);
+    z-index: -11;
+  }
+}

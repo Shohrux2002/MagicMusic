@@ -1,0 +1,22 @@
+{
+  "name": "magicmusic",
+  "version": "1.0.0",
+  "description": "Responsive web application using html/css/sass\r <a href=\"https://mjony05.github.io/MagicMusic/\">Click to see my work</a>",
+  "main": "main.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shohrux2002/MagicMusic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shohrux2002/MagicMusic/issues"
+  },
+  "homepage": "https://github.com/Shohrux2002/MagicMusic#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
